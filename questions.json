@@ -1,13 +1,20 @@
 {
-  "question": "Does the following code compile?",
-  "options": [
-    {"id": 0, "option": "Yes"},
-    {"id": 1, "option": "No"},
-    {"id": 2, "option": "WTF!"}
-  ],
-  "answer": {
-    "id": 1,
-    "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!"
+  "announcement": {
+    "show": false,
+    "text": "3 New Quetions!"
   },
-  "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n\t}"
+  "quizzes": [{
+    "question": "Does the following code compile?",
+    "options": [
+      {"id": 0, "option": "Yes"},
+      {"id": 1, "option": "No"},
+      {"id": 2, "option": "WTF!"}
+    ],
+    "answer": {
+      "id": 1,
+      "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!"
+    },
+    "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n\t}"
+}]
 }
+

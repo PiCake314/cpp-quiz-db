@@ -1,23 +1,34 @@
 {
-  "splashText": {
-    "title": "C++ is Hard!",
-    "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!"
-  },
   "announcement": {
-    "show": false,
-    "text": "New questions added!"
+      "show": false,
+      "text": "New questions added!"
   },
-  "quizzes": [{
-    "question": "Does the following code compile?",
-    "options": [
-      {"id": 0, "option": "Yes"},
-      {"id": 1, "option": "No"},
-      {"id": 2, "option": "WTF!"}
-    ],
-    "answer": {
-      "id": 0,
-      "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!"
-    },
-    "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n}"
-}]
+  "quizzes": [
+      {
+          "answer": {
+              "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!",
+              "id": 0
+          },
+          "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n}",
+          "options": [
+              {
+                  "id": 0,
+                  "option": "yes"
+              },
+              {
+                  "id": 1,
+                  "option": "no"
+              },
+              {
+                  "id": 2,
+                  "option": "wtf"
+              }
+          ],
+          "question": "Does the following code compile?"
+      }
+  ],
+  "splashText": {
+      "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!",
+      "title": "C++ is Hard!"
+  }
 }

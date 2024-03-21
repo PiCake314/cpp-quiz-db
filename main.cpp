@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <iostream>
 
 #include <nlohmann/json.hpp>
 using Json = nlohmann::json;
@@ -51,8 +50,6 @@ Json createJson(const std::filesystem::path& filename){
     };
 
 
-
-
     return Json{
         {"question", question},
         {"options", options},
@@ -77,6 +74,7 @@ int main(){
     Json contnet = Json::parse(json_file);
     contnet["quizzes"] = quizzes;
 
-    std::cout << contnet.dump(4) << std::endl;
+    std::ofstream out{"questions.json"};
+    out << contnet.dump(4);
 
 }

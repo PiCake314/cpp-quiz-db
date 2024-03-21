@@ -1,34 +1,60 @@
 {
-  "announcement": {
-      "show": false,
-      "text": "New questions added!"
-  },
-  "quizzes": [
-      {
-          "answer": {
-              "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!",
-              "id": 0
-          },
-          "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n}",
-          "options": [
-              {
-                  "id": 0,
-                  "option": "yes"
-              },
-              {
-                  "id": 1,
-                  "option": "no"
-              },
-              {
-                  "id": 2,
-                  "option": "wtf"
-              }
-          ],
-          "question": "Does the following code compile?"
-      }
-  ],
-  "splashText": {
-      "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!",
-      "title": "C++ is Hard!"
-  }
+    "announcement": {
+        "show": false,
+        "text": "New questions added!"
+    },
+    "quizzes": [
+        {
+            "answer": {
+                "explanation": "Bool increment got deprecated in C++17.",
+                "id": 3
+            },
+            "code": "#include <iostream>\n\nint main(){\n    bool b = true;\n    std::cout << ++b;\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "0"
+                },
+                {
+                    "id": 1,
+                    "option": "1"
+                },
+                {
+                    "id": 2,
+                    "option": "2"
+                },
+                {
+                    "id": 3,
+                    "option": "syntax error"
+                }
+            ],
+            "question": "What's the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "Lambdas, scopes, scopes inside lambdas, and lambdas inside scopes!",
+                "id": 0
+            },
+            "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "yes"
+                },
+                {
+                    "id": 1,
+                    "option": "no"
+                },
+                {
+                    "id": 2,
+                    "option": "wtf"
+                }
+            ],
+            "question": "Does the following code compile?"
+        }
+    ],
+    "splashText": {
+        "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!",
+        "title": "C++ is Hard!"
+    }
 }

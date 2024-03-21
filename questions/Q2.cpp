@@ -1,8 +1,8 @@
 #include <iostream>
 
 int main(){
-    bool b = true;
-    std::cout << ++b;
+	bool b = true;
+	std::cout << ++b;
 }
 //: What's the output of the following code?
 /*

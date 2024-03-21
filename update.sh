@@ -1,4 +1,4 @@
-make
+make run
 make clean
 
 git add .

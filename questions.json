@@ -6,10 +6,88 @@
     "quizzes": [
         {
             "answer": {
+                "explanation": "The bracket operator translates to simple pointer addition. Addition is commutative, so '*(arr + 3)' is the same as '*(3 + arr)'.",
+                "id": 0
+            },
+            "code": "#include <istream>\n\nint main(){\n\tint arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n    std::cout << 3[arr];\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "3"
+                },
+                {
+                    "id": 1,
+                    "option": "4"
+                },
+                {
+                    "id": 2,
+                    "option": "segmentation fault"
+                },
+                {
+                    "id": 3,
+                    "option": "syntax error"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "The correct type is 'unsigned char(*arr2)[5]'.",
+                "id": 3
+            },
+            "code": "#include <istream>\n\nint main(){\n\tunsigned char arr[3][4][5] = {0};\n\tunsigned char **arr2 = arr[2];\n    std::cout << (arr2[0][1] == arr[2][0][1]);\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "0"
+                },
+                {
+                    "id": 1,
+                    "option": "1"
+                },
+                {
+                    "id": 2,
+                    "option": "segmentation fault"
+                },
+                {
+                    "id": 3,
+                    "option": "compile time error"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "The string \"Pie\" has an implicit null terminator, making it 4 characters long. However, the array is only 3 characters long.",
+                "id": 3
+            },
+            "code": "#include <iostream>\n\nint main(){\n\tchar str[3] = \"Pie\";\n\tstd::cout << str;\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "\"Pie\""
+                },
+                {
+                    "id": 1,
+                    "option": "garbage value"
+                },
+                {
+                    "id": 2,
+                    "option": "segmentation fault"
+                },
+                {
+                    "id": 3,
+                    "option": "compile time error"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
                 "explanation": "Bool increment got deprecated in C++17.",
                 "id": 3
             },
-            "code": "#include <iostream>\n\nint main(){\n    bool b = true;\n    std::cout << ++b;\n}",
+            "code": "#include <iostream>\n\nint main(){\n\tbool b = true;\n\tstd::cout << ++b;\n}",
             "options": [
                 {
                     "id": 0,
@@ -28,7 +106,7 @@
                     "option": "syntax error"
                 }
             ],
-            "question": "What's the output of the following code?"
+            "question": "What is the output of the following code?"
         },
         {
             "answer": {

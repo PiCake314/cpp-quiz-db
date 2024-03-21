@@ -1,7 +1,11 @@
 {
+  "splashText": {
+    "title": "C++ is Hard!",
+    "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!"
+  },
   "announcement": {
     "show": false,
-    "text": "3 New Quetions!"
+    "text": "New questions added!"
   },
   "quizzes": [{
     "question": "Does the following code compile?",
@@ -17,4 +21,3 @@
     "code": "int main(){\n\t;\n\t{}\n\t{};\n\t[]{};\n\t[](){};\n\t[](){}();\n\t{{}[]{};};\n\t{}{}{}{}{}\n\t[](){{}}();\n\t{{}[](){}();};\n\t[](){{};{}{};}();\n}"
 }]
 }
-

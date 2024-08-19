@@ -7,7 +7,7 @@
 using Json = nlohmann::json;
 
 
-Json createJson(const std::filesystem::path& filename){
+Json createJson(const std::filesystem::path &filename){
     std::ifstream file{filename};
 
     std::string quesiton_contnet;
@@ -70,9 +70,9 @@ int main(){
         quizzes.push_back(json);
     }
 
-    std::ifstream json_file{"questions.json"};
+    std::ifstream json_file{"questions.json"}; // read the whole json including the 
     Json contnet = Json::parse(json_file);
-    contnet["quizzes"] = quizzes;
+    contnet["quizzes"] = quizzes; // update only the quizzes portion
 
     std::ofstream out{"questions.json"};
     out << contnet.dump(4);

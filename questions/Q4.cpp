@@ -1,4 +1,4 @@
-#include <istream>
+#include <iostream>
 
 int main(){
 	unsigned char arr[3][4][5] = {0};

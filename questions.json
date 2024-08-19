@@ -35,7 +35,7 @@
                 "explanation": "The correct type is 'unsigned char(*arr2)[5]'.",
                 "id": 3
             },
-            "code": "#include <istream>\n\nint main(){\n\tunsigned char arr[3][4][5] = {0};\n\tunsigned char **arr2 = arr[2];\n    std::cout << (arr2[0][1] == arr[2][0][1]);\n}",
+            "code": "#include <iostream>\n\nint main(){\n\tunsigned char arr[3][4][5] = {0};\n\tunsigned char **arr2 = arr[2];\n    std::cout << (arr2[0][1] == arr[2][0][1]);\n}",
             "options": [
                 {
                     "id": 0,
@@ -52,6 +52,58 @@
                 {
                     "id": 3,
                     "option": "compile time error"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "'const' type qualifier on return type has no effect for primitive types.",
+                "id": 1
+            },
+            "code": "#include <iostream>\n\nvoid print(int &x)        { std::cout << 1; }\nvoid print(int &&x)       { std::cout << 2; }\nvoid print(const int &x)  { std::cout << 3; }\nvoid print(const int &&x) { std::cout << 4; }\n\nint main(){\n    int a = 3;\n    print((const int)a);\n    print((const int)1);\n    print(4);\n}",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "342"
+                },
+                {
+                    "id": 1,
+                    "option": "222"
+                },
+                {
+                    "id": 2,
+                    "option": "314"
+                },
+                {
+                    "id": 3,
+                    "option": "334"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "The correct type is 'unsigned char(*arr2)[5]'.",
+                "id": 1
+            },
+            "code": "#include <iostream>\n\nauto sub(auto... args) { return -(-args - ...); }\n\nint main(){\n\tstd::cout << sub(3, 14, 1, 5, 9);\n}\n",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "-2"
+                },
+                {
+                    "id": 1,
+                    "option": "-6"
+                },
+                {
+                    "id": 2,
+                    "option": "-26"
+                },
+                {
+                    "id": 3,
+                    "option": "6"
                 }
             ],
             "question": "What is the output of the following code?"
@@ -132,7 +184,7 @@
         }
     ],
     "splashText": {
-        "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!",
+        "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!\nP.S: Assume C++20 - Clang++ v15.0.0",
         "title": "C++ is Hard!"
     }
 }

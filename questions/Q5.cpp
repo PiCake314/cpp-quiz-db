@@ -6,8 +6,8 @@ int main(){
 }
 //: What is the output of the following code?
 /*
-@ 3
-# 4
+# 3
+@ 4
 # segmentation fault
 # syntax error
 */

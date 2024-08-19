@@ -184,7 +184,7 @@
         }
     ],
     "splashText": {
-        "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!\nP.S: Assume C++20 - Clang++ v15.0.0",
+        "body": "With every new version, C++ becomes more and more complex. The features that are added to the language are not always intuitive, and sometime it becomes hard to keep track of what does what and why certain things happen. Let's test your knowledge of C++ with this 'simple' quiz!\n\nP.S: Assume C++20 - Clang++ v15.0.0",
         "title": "C++ is Hard!"
     }
 }

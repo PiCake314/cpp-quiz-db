@@ -13,4 +13,4 @@ int main(){
 # -26
 # 6
 */
-//: The correct type is 'unsigned char(*arr2)[5]'.
+//: The expression unfolds to -(-3 -(-14 - (-1 - (-5 - (-9)))))

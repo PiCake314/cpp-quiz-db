@@ -84,7 +84,7 @@
         },
         {
             "answer": {
-                "explanation": "The correct type is 'unsigned char(*arr2)[5]'.",
+                "explanation": "The expression unfolds to -(-3 -(-14 - (-1 - (-5 - (-9)))))",
                 "id": 1
             },
             "code": "#include <iostream>\n\nauto sub(auto... args) { return -(-args - ...); }\n\nint main(){\n\tstd::cout << sub(3, 14, 1, 5, 9);\n}\n",

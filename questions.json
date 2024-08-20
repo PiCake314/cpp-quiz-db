@@ -185,7 +185,7 @@
         {
             "answer": {
                 "explanation": "There is no such function such as \"std::string::compare(std::string, std::string)\"",
-                "id": 2
+                "id": 3
             },
             "code": "#include <iostream>\n#include <string>\n\nint main(){\n    using std::operator\"\"s;\n    const auto s1 = \"Hello\"s;\n    const auto s2 = \"World\"s;\n    std::cout << (std::string::compare(s1, s2) == s1.compare(s2));\n}\n",
             "options": [

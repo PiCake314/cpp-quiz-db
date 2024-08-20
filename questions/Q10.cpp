@@ -12,7 +12,7 @@ int main(){
 /*
 # 15
 # 0
-@ -15
-# Compile Time Error
+# -15
+@ Compile Time Error
 */
 //: There is no such function such as "std::string::compare(std::string, std::string)"

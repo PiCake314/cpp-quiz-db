@@ -181,6 +181,84 @@
                 }
             ],
             "question": "Does the following code compile?"
+        },
+        {
+            "answer": {
+                "explanation": "There is no such function such as \"std::string::compare(std::string, std::string)\"",
+                "id": 2
+            },
+            "code": "#include <iostream>\n#include <string>\n\nint main(){\n    using std::operator\"\"s;\n    const auto s1 = \"Hello\"s;\n    const auto s2 = \"World\"s;\n    std::cout << (std::string::compare(s1, s2) == s1.compare(s2));\n}\n",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "15"
+                },
+                {
+                    "id": 1,
+                    "option": "0"
+                },
+                {
+                    "id": 2,
+                    "option": "-15"
+                },
+                {
+                    "id": 3,
+                    "option": "Compile Time Error"
+                }
+            ],
+            "question": "What is the output of the following code?"
+        },
+        {
+            "answer": {
+                "explanation": "Can't specify template parameters without explicity calling \".operator()\".",
+                "id": 2
+            },
+            "code": "int main(){\n    [a = 0]<typename T>(T) mutable { return ++a; }<int>(0);\n    [a = 0]<typename T>(T) mutable { return ++a; }.operator()<int>({});\n    [a = 0]<typename T>(T) mutable { return ++a; }.template operator()<int>({});\n}\n",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "Yes. It's fine."
+                },
+                {
+                    "id": 1,
+                    "option": "Yes, but it's undefined behavior"
+                },
+                {
+                    "id": 2,
+                    "option": "No."
+                },
+                {
+                    "id": 3,
+                    "option": "I don't know..."
+                }
+            ],
+            "question": "Does the following code compile?"
+        },
+        {
+            "answer": {
+                "explanation": "Signed integer overflow is undefined behavior.",
+                "id": 3
+            },
+            "code": "#include <iostream>\n\nstruct Bit{\n    int b : 2 = 1;\n};\n\nint main(){\n\tBit bit;\n    std::cout << ++bit.b;\n}\n",
+            "options": [
+                {
+                    "id": 0,
+                    "option": "-1"
+                },
+                {
+                    "id": 1,
+                    "option": "-2"
+                },
+                {
+                    "id": 2,
+                    "option": "Syntax Error"
+                },
+                {
+                    "id": 3,
+                    "option": "Undefined Behavior "
+                }
+            ],
+            "question": "What is the output of the following code?"
         }
     ],
     "splashText": {

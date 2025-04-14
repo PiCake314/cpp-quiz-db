@@ -136,7 +136,7 @@
         },
         {
             "answer": {
-                "explanation": "Bool increment got deprecated in C++17.",
+                "explanation": "Bool increment got removed in C++17.",
                 "id": 3
             },
             "code": "#include <iostream>\n\nint main(){\n\tbool b = true;\n\tstd::cout << ++b;\n}",
@@ -155,7 +155,7 @@
                 },
                 {
                     "id": 3,
-                    "option": "syntax error"
+                    "option": "compile time error"
                 }
             ],
             "question": "What is the output of the following code?"

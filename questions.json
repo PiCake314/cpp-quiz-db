@@ -9,7 +9,7 @@
                 "explanation": "The bracket operator translates to simple pointer addition. Addition is commutative, so '*(arr + 3)' is the same as '*(3 + arr)'.",
                 "id": 1
             },
-            "code": "#include <istream>\n\nint main(){\n\tint arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n    std::cout << 3[arr];\n}",
+            "code": "#include <iostream>\n\nint main(){\n\tint arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n    std::cout << 3[arr];\n}",
             "options": [
                 {
                     "id": 0,

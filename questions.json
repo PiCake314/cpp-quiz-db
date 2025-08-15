@@ -243,22 +243,22 @@
             "options": [
                 {
                     "id": 0,
-                    "option": "-1"
+                    "option": "prints -1"
                 },
                 {
                     "id": 1,
-                    "option": "-2"
+                    "option": "prints -2"
                 },
                 {
                     "id": 2,
-                    "option": "Syntax Error"
+                    "option": "Cause a Syntax Error"
                 },
                 {
                     "id": 3,
-                    "option": "Undefined Behavior "
+                    "option": "Cause Undefined Behavior "
                 }
             ],
-            "question": "What is the output of the following code?"
+            "question": "What is the expected bahaviour of the following code?"
         }
     ],
     "splashText": {

@@ -243,7 +243,7 @@
             "options": [
                 {
                     "id": 0,
-                    "option": "prints -1"
+                    "option": "UB. Prints nothing."
                 },
                 {
                     "id": 1,
@@ -251,14 +251,14 @@
                 },
                 {
                     "id": 2,
-                    "option": "Cause a Syntax Error"
+                    "option": "Syntax Error"
                 },
                 {
                     "id": 3,
-                    "option": "Cause Undefined Behavior "
+                    "option": "UB. Likely prints -2"
                 }
             ],
-            "question": "What is the expected bahaviour of the following code?"
+            "question": "Which behaviour does this code exhibit?"
         }
     ],
     "splashText": {
